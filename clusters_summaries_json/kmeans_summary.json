@@ -1,0 +1,32 @@
+[
+  {
+    "cluster":0,
+    "count":9242,
+    "avg_length":7.6466132872,
+    "top_words":"alkaline | performance | batteries | count | amazonbasics"
+  },
+  {
+    "cluster":1,
+    "count":4342,
+    "avg_length":15.582220175,
+    "top_words":"hd | includes | special | offers | wi"
+  },
+  {
+    "cluster":2,
+    "count":2379,
+    "avg_length":8.7570407734,
+    "top_words":"amazon | echo | bluetooth | speaker | enabled"
+  },
+  {
+    "cluster":3,
+    "count":2206,
+    "avg_length":12.5766092475,
+    "top_words":"proof | kid | kids | edition | case"
+  },
+  {
+    "cluster":4,
+    "count":1894,
+    "avg_length":16.1240760296,
+    "top_words":"hd | alexa | marine | blue | tablet"
+  }
+]
