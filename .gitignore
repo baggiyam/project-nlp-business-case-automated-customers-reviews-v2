@@ -1,3 +1,6 @@
 data/*.csv
 results/
+data/*.csv
+results/
+models/*.joblib
 0.26.0git
