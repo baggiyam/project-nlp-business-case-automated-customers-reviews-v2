@@ -1,7 +1,7 @@
 {
     "model_name": "UMAP + KMeans Product Clustering",
     "version": "v1.0",
-    "created_at": "2025-06-12T00:41:42.462641",
+    "created_at": "2025-06-12T10:55:11.958621",
     "umap_params": {
         "n_neighbors": 15,
         "n_components": 2,
@@ -17,26 +17,26 @@
         "1": "Fire Tablet",
         "2": "Fire Tablet",
         "3": "Echo / Alexa Smart Device",
-        "4": "Fire Kids Tablet",
+        "4": "Fire Tablet",
         "5": "AA Batteries",
         "6": "Kindle Device or Accessory",
-        "7": "Fire Kids Tablet",
+        "7": "Fire Tablet",
         "8": "Echo / Alexa Smart Device",
         "9": "Kindle Device or Accessory",
-        "10": "Fire Kids Tablet"
+        "10": "Fire Tablet"
     },
     "confidence_scores": {
         "0": 0.95,
         "1": 0.88,
         "2": 0.88,
         "3": 0.9,
-        "4": 0.92,
+        "4": 0.88,
         "5": 0.95,
         "6": 0.85,
-        "7": 0.92,
+        "7": 0.88,
         "8": 0.9,
         "9": 0.85,
-        "10": 0.92
+        "10": 0.88
     },
     "top_terms": {
         "0": [
