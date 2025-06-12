@@ -1,0 +1,730 @@
+{
+    "model_name": "UMAP + KMeans Product Clustering",
+    "version": "v1.0",
+    "created_at": "2025-06-12T00:41:42.462641",
+    "umap_params": {
+        "n_neighbors": 15,
+        "n_components": 2,
+        "metric": "cosine"
+    },
+    "kmeans_params": {
+        "n_clusters": 11,
+        "random_state": 42
+    },
+    "labeling_method": "Automated Labeling via Category + Brand Heuristics",
+    "cluster_labels": {
+        "0": "AAA Batteries",
+        "1": "Fire Tablet",
+        "2": "Fire Tablet",
+        "3": "Echo / Alexa Smart Device",
+        "4": "Fire Kids Tablet",
+        "5": "AA Batteries",
+        "6": "Kindle Device or Accessory",
+        "7": "Fire Kids Tablet",
+        "8": "Echo / Alexa Smart Device",
+        "9": "Kindle Device or Accessory",
+        "10": "Fire Kids Tablet"
+    },
+    "confidence_scores": {
+        "0": 0.95,
+        "1": 0.88,
+        "2": 0.88,
+        "3": 0.9,
+        "4": 0.92,
+        "5": 0.95,
+        "6": 0.85,
+        "7": 0.92,
+        "8": 0.9,
+        "9": 0.85,
+        "10": 0.92
+    },
+    "top_terms": {
+        "0": [
+            [
+                "amazonbasics",
+                7748
+            ],
+            [
+                "aaa",
+                7748
+            ],
+            [
+                "performance",
+                7748
+            ],
+            [
+                "alkaline",
+                7748
+            ],
+            [
+                "batteries",
+                7748
+            ],
+            [
+                "count",
+                7748
+            ]
+        ],
+        "1": [
+            [
+                "hd",
+                3448
+            ],
+            [
+                "allnew",
+                1724
+            ],
+            [
+                "fire",
+                1724
+            ],
+            [
+                "tablet",
+                1724
+            ],
+            [
+                "display",
+                1724
+            ],
+            [
+                "wifi",
+                1724
+            ],
+            [
+                "gb",
+                1724
+            ],
+            [
+                "includes",
+                1724
+            ],
+            [
+                "special",
+                1724
+            ],
+            [
+                "offers",
+                1724
+            ]
+        ],
+        "2": [
+            [
+                "with",
+                2707
+            ],
+            [
+                "hd",
+                2702
+            ],
+            [
+                "fire",
+                1367
+            ],
+            [
+                "alexa",
+                1358
+            ],
+            [
+                "tablet",
+                1349
+            ],
+            [
+                "display",
+                1349
+            ],
+            [
+                "gb",
+                1349
+            ],
+            [
+                "special",
+                1349
+            ],
+            [
+                "offers",
+                1349
+            ],
+            [
+                "allnew",
+                992
+            ]
+        ],
+        "3": [
+            [
+                "amazon",
+                1365
+            ],
+            [
+                "alexaenabled",
+                1365
+            ],
+            [
+                "bluetooth",
+                984
+            ],
+            [
+                "speaker",
+                983
+            ],
+            [
+                "echo",
+                753
+            ],
+            [
+                "show",
+                753
+            ],
+            [
+                "with",
+                753
+            ],
+            [
+                "screen",
+                753
+            ],
+            [
+                "tap",
+                612
+            ],
+            [
+                "black",
+                393
+            ]
+        ],
+        "4": [
+            [
+                "fire",
+                860
+            ],
+            [
+                "tablet",
+                860
+            ],
+            [
+                "display",
+                860
+            ],
+            [
+                "gb",
+                860
+            ],
+            [
+                "kids",
+                777
+            ],
+            [
+                "edition",
+                777
+            ],
+            [
+                "kidproof",
+                777
+            ],
+            [
+                "case",
+                777
+            ],
+            [
+                "blue",
+                669
+            ],
+            [
+                "wifi",
+                586
+            ]
+        ],
+        "5": [
+            [
+                "amazonbasics",
+                1494
+            ],
+            [
+                "aa",
+                1494
+            ],
+            [
+                "performance",
+                1494
+            ],
+            [
+                "alkaline",
+                1494
+            ],
+            [
+                "batteries",
+                1494
+            ],
+            [
+                "count",
+                1494
+            ],
+            [
+                "packaging",
+                1494
+            ],
+            [
+                "may",
+                1494
+            ],
+            [
+                "vary",
+                1494
+            ],
+            [
+                "kindle",
+                424
+            ]
+        ],
+        "6": [
+            [
+                "hd",
+                1658
+            ],
+            [
+                "display",
+                1108
+            ],
+            [
+                "wifi",
+                1108
+            ],
+            [
+                "includes",
+                1108
+            ],
+            [
+                "special",
+                1108
+            ],
+            [
+                "offers",
+                1108
+            ],
+            [
+                "allnew",
+                839
+            ],
+            [
+                "fire",
+                829
+            ],
+            [
+                "tablet",
+                829
+            ],
+            [
+                "gb",
+                829
+            ]
+        ],
+        "7": [
+            [
+                "fire",
+                1196
+            ],
+            [
+                "kids",
+                1196
+            ],
+            [
+                "edition",
+                1196
+            ],
+            [
+                "tablet",
+                1196
+            ],
+            [
+                "display",
+                1196
+            ],
+            [
+                "wifi",
+                1196
+            ],
+            [
+                "gb",
+                1196
+            ],
+            [
+                "kidproof",
+                1196
+            ],
+            [
+                "case",
+                1196
+            ],
+            [
+                "pink",
+                1009
+            ]
+        ],
+        "8": [
+            [
+                "amazon",
+                739
+            ],
+            [
+                "echo",
+                614
+            ],
+            [
+                "plus",
+                590
+            ],
+            [
+                "w",
+                590
+            ],
+            [
+                "builtin",
+                590
+            ],
+            [
+                "hub",
+                590
+            ],
+            [
+                "silver",
+                590
+            ],
+            [
+                "hd",
+                260
+            ],
+            [
+                "with",
+                244
+            ],
+            [
+                "fire",
+                186
+            ]
+        ],
+        "9": [
+            [
+                "gb",
+                900
+            ],
+            [
+                "wifi",
+                700
+            ],
+            [
+                "kindle",
+                644
+            ],
+            [
+                "display",
+                583
+            ],
+            [
+                "amazon",
+                535
+            ],
+            [
+                "fire",
+                532
+            ],
+            [
+                "tablet",
+                489
+            ],
+            [
+                "hd",
+                426
+            ],
+            [
+                "blue",
+                394
+            ],
+            [
+                "includes",
+                303
+            ]
+        ],
+        "10": [
+            [
+                "fire",
+                1016
+            ],
+            [
+                "tablet",
+                1016
+            ],
+            [
+                "display",
+                1016
+            ],
+            [
+                "gb",
+                1016
+            ],
+            [
+                "wifi",
+                783
+            ],
+            [
+                "includes",
+                783
+            ],
+            [
+                "special",
+                783
+            ],
+            [
+                "offers",
+                783
+            ],
+            [
+                "black",
+                719
+            ],
+            [
+                "hd",
+                594
+            ]
+        ]
+    },
+    "example_names": {
+        "0": {
+            "top_brands": {
+                "Amazonbasics": 7748
+            },
+            "top_primaryCategories": {
+                "Health & Beauty": 7748
+            },
+            "top_categories": {
+                "Health": 15496,
+                "AA": 7748,
+                "Robot Check": 7748,
+                " Household & Baby Care": 7748,
+                "Batteries & Chargers": 7748
+            },
+            "sample_names": [
+                "AmazonBasics AAA Performance Alkaline Batteries (36 Count)"
+            ]
+        },
+        "1": {
+            "top_brands": {
+                "Amazon": 1724
+            },
+            "top_primaryCategories": {
+                "Electronics": 1724
+            },
+            "top_categories": {
+                "Fire Tablets": 1724,
+                "Tablets": 1724,
+                "Computers/Tablets & Networking": 1724,
+                "Computers & Tablets": 1724,
+                "All Tablets": 1724
+            },
+            "sample_names": [
+                "All-New Fire HD 8 Tablet, 8\" HD Display, Wi-Fi, 32 GB - Includes Special Offers, Black",
+                "All-New Fire HD 8 Tablet, 8 HD Display, Wi-Fi, 16 GB - Includes Special Offers, Black",
+                "All-New Fire HD 8 Tablet, 8 HD Display, Wi-Fi, 32 GB - Includes Special Offers, Black"
+            ]
+        },
+        "2": {
+            "top_brands": {
+                "Amazon": 1374
+            },
+            "top_primaryCategories": {
+                "Electronics": 1374
+            },
+            "top_categories": {
+                "All Tablets": 1349,
+                "Computers & Tablets": 1349,
+                "Fire Tablets": 1349,
+                "Tablets": 1349,
+                "Amazon Tablets": 1321
+            },
+            "sample_names": [
+                "Amazon Fire TV with 4K Ultra HD and Alexa Voice Remote (Pendant Design) | Streaming Media Player",
+                "Fire HD 8 Tablet with Alexa, 8\" HD Display, 32 GB, Tangerine - with Special Offers",
+                "Fire TV Stick Streaming Media Player Pair Kit"
+            ]
+        },
+        "3": {
+            "top_brands": {
+                "Amazon": 1365,
+                "Amazonbasics": 45,
+                "AmazonBasics": 6
+            },
+            "top_primaryCategories": {
+                "Electronics,Hardware": 753,
+                "Electronics": 662,
+                "Home & Garden": 1
+            },
+            "top_categories": {
+                "Electronics": 1924,
+                "Electronics Features": 1382,
+                "Speakers": 1370,
+                "Home Improvement": 1365,
+                "Amazon Echo": 1365
+            },
+            "sample_names": [
+                "Amazon Echo Show Alexa-enabled Bluetooth Speaker with 7\" Screen",
+                "Amazon Tap - Alexa-Enabled Portable Bluetooth Speaker",
+                "AmazonBasics 11.6-Inch Laptop Sleeve"
+            ]
+        },
+        "4": {
+            "top_brands": {
+                "Amazon": 860,
+                "Amazonbasics": 51,
+                "AmazonBasics": 4
+            },
+            "top_primaryCategories": {
+                "Electronics": 900,
+                "Office Supplies": 9,
+                "Animals & Pet Supplies": 5,
+                "Home & Garden": 1
+            },
+            "top_categories": {
+                "Electronics": 1294,
+                "Fire Tablets": 860,
+                "Amazon Tablets": 860,
+                "Computers & Tablets": 860,
+                "Tablets": 860
+            },
+            "sample_names": [
+                "Fire Kids Edition Tablet, 7 Display, Wi-Fi, 16 GB, Blue Kid-Proof Case",
+                "AmazonBasics Nylon CD/DVD Binder (400 Capacity)",
+                "AmazonBasics Ventilated Adjustable Laptop Stand"
+            ]
+        },
+        "5": {
+            "top_brands": {
+                "Amazonbasics": 1494,
+                "Amazon": 424
+            },
+            "top_primaryCategories": {
+                "Health & Beauty": 1494,
+                "Electronics": 424
+            },
+            "top_categories": {
+                "Health": 2988,
+                "Electronics Features": 1918,
+                "Electronics": 1918,
+                "AA": 1494,
+                "Camera Batteries": 1494
+            },
+            "sample_names": [
+                "AmazonBasics AA Performance Alkaline Batteries (48 Count) - Packaging May Vary",
+                "Kindle Voyage E-reader, 6 High-Resolution Display (300 ppi) with Adaptive Built-in Light, PagePress Sensors, Wi-Fi - Includes Special Offers"
+            ]
+        },
+        "6": {
+            "top_brands": {
+                "Amazon": 1108
+            },
+            "top_primaryCategories": {
+                "Electronics": 851,
+                "Office Supplies,Electronics": 226,
+                "Electronics,Media": 31
+            },
+            "top_categories": {
+                "Computers & Tablets": 1108,
+                "Tablets": 1077,
+                "Electronics": 1077,
+                "All Tablets": 1077,
+                "iPad & Tablets": 1032
+            },
+            "sample_names": [
+                "Kindle E-reader - White, 6 Glare-Free Touchscreen Display, Wi-Fi - Includes Special Offers",
+                "Kindle Oasis E-reader with Leather Charging Cover - Merlot, 6 High-Resolution Display (300 ppi), Wi-Fi - Includes Special Offers",
+                "All-New Fire HD 8 Tablet, 8\" HD Display, Wi-Fi, 16 GB - Includes Special Offers, Magenta"
+            ]
+        },
+        "7": {
+            "top_brands": {
+                "Amazon": 1196
+            },
+            "top_primaryCategories": {
+                "Toys & Games,Electronics": 1009,
+                "Electronics": 187
+            },
+            "top_categories": {
+                "Electronics": 2018,
+                "Fire Tablets": 1196,
+                "Tablets": 1196,
+                "Amazon Tablets": 1196,
+                "Computers & Tablets": 1196
+            },
+            "sample_names": [
+                "Fire Kids Edition Tablet, 7 Display, Wi-Fi, 16 GB, Green Kid-Proof Case",
+                "Fire Kids Edition Tablet, 7 Display, Wi-Fi, 16 GB, Pink Kid-Proof Case"
+            ]
+        },
+        "8": {
+            "top_brands": {
+                "Amazon": 800,
+                "Amazonbasics": 1
+            },
+            "top_primaryCategories": {
+                "Electronics,Hardware": 590,
+                "Electronics": 208,
+                "Electronics,Furniture": 2,
+                "Animals & Pet Supplies": 1
+            },
+            "top_categories": {
+                "Amazon": 743,
+                "Amazon Echo": 614,
+                "Amazon Home": 614,
+                "Digital Device 3": 614,
+                "Voice Assistants": 598
+            },
+            "sample_names": [
+                "Amazon - Echo Plus w/ Built-In Hub - Silver",
+                "Fire Tablet with Alexa, 7\" Display, 16 GB, Magenta - with Special Offers",
+                "Amazon Echo \u201a\u00c4\u00ec White"
+            ]
+        },
+        "9": {
+            "top_brands": {
+                "Amazon": 847
+            },
+            "top_primaryCategories": {
+                "Electronics": 698,
+                "Office Supplies,Electronics": 95,
+                "Electronics,Media": 54
+            },
+            "top_categories": {
+                "Computers & Tablets": 732,
+                "Tablets": 692,
+                "All Tablets": 666,
+                "Computers/Tablets & Networking": 385,
+                "Tablets & eBook Readers": 372
+            },
+            "sample_names": [
+                "Amazon Kindle E-Reader 6\" Wifi (8th Generation, 2016)",
+                "Amazon 9W PowerFast Official OEM USB Charger and Power Adapter for Fire Tablets and Kindle eReaders",
+                "All-New Fire HD 8 Tablet, 8 HD Display, Wi-Fi, 16 GB - Includes Special Offers, Blue"
+            ]
+        },
+        "10": {
+            "top_brands": {
+                "Amazon": 1016
+            },
+            "top_primaryCategories": {
+                "Electronics": 952,
+                "Office Supplies,Electronics": 64
+            },
+            "top_categories": {
+                "Fire Tablets": 1016,
+                "Tablets": 1016,
+                "Amazon Tablets": 1016,
+                "Computers & Tablets": 1016,
+                "Computers/Tablets & Networking": 952
+            },
+            "sample_names": [
+                "Fire Tablet, 7 Display, Wi-Fi, 16 GB - Includes Special Offers, Black",
+                "Fire HD 10 Tablet, 10.1 HD Display, Wi-Fi, 16 GB - Includes Special Offers, Silver Aluminum",
+                "All-New Fire HD 8 Kids Edition Tablet, 8 HD Display, 32 GB, Blue Kid-Proof Case"
+            ]
+        }
+    },
+    "html_viz_path": "visualization/umap_kmeans_cluster_confidence_chart.html",
+    "joblib_model_path": "models/umap_kmeans_model.joblib"
+}
