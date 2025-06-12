@@ -1,0 +1,12 @@
+cluster_id,auto_label,confidence_score,top_brand,primary_category,sample_name,human_override
+0,AAA Batteries,0.95,Amazonbasics,Health & Beauty,AmazonBasics AAA Performance Alkaline Batteries (36 Count),
+1,Fire Tablet,0.88,Amazon,Electronics,"All-New Fire HD 8 Tablet, 8"" HD Display, Wi-Fi, 32 GB - Includes Special Offers, Black",
+2,Fire Tablet,0.88,Amazon,Electronics,Amazon Fire TV with 4K Ultra HD and Alexa Voice Remote (Pendant Design) | Streaming Media Player,
+3,Echo / Alexa Smart Device,0.9,Amazon,"Electronics,Hardware","Amazon Echo Show Alexa-enabled Bluetooth Speaker with 7"" Screen",
+4,Fire Kids Tablet,0.92,Amazon,Electronics,"Fire Kids Edition Tablet, 7 Display, Wi-Fi, 16 GB, Blue Kid-Proof Case",
+5,AA Batteries,0.95,Amazonbasics,Health & Beauty,AmazonBasics AA Performance Alkaline Batteries (48 Count) - Packaging May Vary,
+6,Kindle Device or Accessory,0.85,Amazon,Electronics,"Kindle E-reader - White, 6 Glare-Free Touchscreen Display, Wi-Fi - Includes Special Offers",
+7,Fire Kids Tablet,0.92,Amazon,"Toys & Games,Electronics","Fire Kids Edition Tablet, 7 Display, Wi-Fi, 16 GB, Green Kid-Proof Case",
+8,Echo / Alexa Smart Device,0.9,Amazon,"Electronics,Hardware",Amazon - Echo Plus w/ Built-In Hub - Silver,
+9,Kindle Device or Accessory,0.85,Amazon,Electronics,"Amazon Kindle E-Reader 6"" Wifi (8th Generation, 2016)",
+10,Fire Kids Tablet,0.92,Amazon,Electronics,"Fire Tablet, 7 Display, Wi-Fi, 16 GB - Includes Special Offers, Black",
