@@ -3,4 +3,5 @@ results/
 data/*.csv
 results/
 models/*.joblib
+.env
 0.26.0git
