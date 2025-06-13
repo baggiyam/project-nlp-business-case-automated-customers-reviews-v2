@@ -81,6 +81,7 @@ Organize products into clusters and generate summaries and recommendations using
 
    * Dimensionality reduction with **UMAP**
    * Clustering with **KMeans** (11 clusters)
+   * Relabled the Clusters in 4
    * Assign descriptive `cluster_labels` using GPT-based interpretation
 
 2. **Product-Level Aggregation**
