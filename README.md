@@ -15,25 +15,36 @@ Generative AI Summarization & Recommendations: Summarize reviews and recommend t
 
 #Project Steps
 
-Part 1: Data Preprocessing and Sentimanet Lable Clasifications
+# Part 1: Data Preprocessing and Sentimanet Lable Clasifications
 
 Objective:
 Identify and preprocess the dataset by cleaning the Amazon product reviews, then classify each review into Positive, Neutral, or Negative sentiment categories. This classification helps businesses gain insights into customer opinions and improve decision-making based on sentiment trends.
 
 Dataset:
-Amazon Datset from https://www.kaggle.com/datasets/datafiniti/consumer-reviews-of-amazon-products/data
-Methodology:
+Amazon Datset from https://www.kaggle.com/datasets/datafiniti/consumer-reviews-of-amazon-products/data and combained Two data sets () with the same column name to obtain a large dataset
 
-Extract TF-IDF features (top 5000) from review text.
-Train a Support Vector Machine (SVM) classifier with balanced class weights.
-Results:
 
-Achieved 85.68% accuracy.
-Output file contains reviews with predicted sentiments and confidence scores.
-Output:
-product_reviews_sentiment_and_confidence.csv — reviews plus predicted sentiment and confidence.
+# Part 2 :Implements a sentiment classification pipeline using DistilBERT:
 
-How to Run:
+Data loading and preprocessing
+Label encoding for sentiment classes
+Model training with Hugging Face Transformers
+Evaluation metrics (accuracy, confusion matrix, classification report)
+Visualization of results
+Key metrics:
 
-Upload 1429_1.csv.
-Run the notebook sentiment_analysis_tfidf_svm.ipynb.
+Validation Accuracy: 95.29%
+
+# Part 3 :Generative GPT-3 Model (Generative GPT3 model.ipynb)
+
+https://colab.research.google.com/assets/colab-badge.svg
+
+Generates product category summaries using GPT-3.5-turbo:
+
+Product clustering by category
+Prompt engineering for structured JSON output
+GPT-3 API integration
+Result enrichment with product images
+JSON output generation
+Sample output structure:
+
