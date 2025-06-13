@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GPT Product Summaries</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background: #f4f4f4;
+        margin: 0;
+        padding: 1rem;
+      }
+      h1 {
+        text-align: center;
+        margin-bottom: 2rem;
+      }
+      .category {
+        background: white;
+        margin: 1rem auto;
+        padding: 1rem;
+        border-radius: 8px;
+        max-width: 900px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      .products {
+        display: flex;
+        gap: 1rem;
+        overflow-x: auto;
+      }
+      .product-card {
+        flex: 0 0 250px;
+        background: #fafafa;
+        border: 1px solid #ddd;
+        border-radius: 6px;
+        padding: 0.5rem;
+      }
+      .product-card img {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+      }
+      .product-card h4 {
+        margin: 0.5rem 0 0.2rem;
+        font-size: 1rem;
+      }
+      .product-card p {
+        margin: 0;
+        font-size: 0.9rem;
+      }
+      .summary {
+        margin-top: 1rem;
+        font-style: italic;
+      }
+      .worst {
+        margin-top: 1rem;
+        color: red;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>GPT Product Recommendations</h1>
+    <div id="content"></div>
+
+    <script>
+      async function loadSummaries() {
+        const response = await fetch("gpt_summaries_by_category.json");
+        const data = await response.json();
+        const container = document.getElementById("content");
+
+        data.forEach((categoryBlock) => {
+          const catDiv = document.createElement("div");
+          catDiv.className = "category";
+
+          const title = document.createElement("h2");
+          title.textContent = categoryBlock.category || "Category";
+          catDiv.appendChild(title);
+
+          // Top Products
+          const productContainer = document.createElement("div");
+          productContainer.className = "products";
+
+          (categoryBlock.top_products || []).forEach((p) => {
+            const card = document.createElement("div");
+            card.className = "product-card";
+
+            if (p.imageURL) {
+              const img = document.createElement("img");
+              img.src = p.imageURL.split(",")[0];
+              card.appendChild(img);
+            }
+
+            const name = document.createElement("h4");
+            name.textContent = p.name;
+            card.appendChild(name);
+
+            const rating = document.createElement("p");
+            rating.textContent = `Rating: ${p.rating}`;
+            card.appendChild(rating);
+
+            const tag = document.createElement("p");
+            tag.textContent = `Tag: ${p.tag}`;
+            card.appendChild(tag);
+
+            const highlight = document.createElement("p");
+            highlight.textContent = p.highlight;
+            card.appendChild(highlight);
+
+            productContainer.appendChild(card);
+          });
+
+          catDiv.appendChild(productContainer);
+
+          // Worst Product
+          if (categoryBlock.worst_product && categoryBlock.worst_product.name) {
+            const worst = document.createElement("div");
+            worst.className = "worst";
+            worst.textContent = `Worst Product: ${categoryBlock.worst_product.name} - ${categoryBlock.worst_product.issue}`;
+            catDiv.appendChild(worst);
+          }
+
+          // Summary
+          const summary = document.createElement("div");
+          summary.className = "summary";
+          summary.textContent = categoryBlock.summary_text;
+          catDiv.appendChild(summary);
+
+          container.appendChild(catDiv);
+        });
+      }
+
+      loadSummaries();
+    </script>
+  </body>
+</html>
