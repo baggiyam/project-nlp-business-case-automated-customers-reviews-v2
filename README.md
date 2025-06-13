@@ -1,50 +1,107 @@
-# Project NLP | Business Case: Automated Customer Reviews
+# 🧠 NLP Business Case: Automated Customer Reviews
 
-# Project-Overview
+## 📌 Overview
 
-This project builds a product review website powered by NLP models that aggregate customer feedback from multiple sources. It helps businesses:
+This project builds a **smart product review analysis and recommendation system** powered by Natural Language Processing (NLP) and Generative AI. It automates the end-to-end process of understanding customer sentiment, clustering products, and summarizing key insights—helping businesses make data-driven decisions and enhance product visibility.
 
-Analyze review sentiment
-Organize products into meaningful categories
-Recommend top products effectively using AI
- # Main Features
+---
 
-Sentiment Classification: Categorize reviews as Positive, Neutral, or Negative.
-Product Category Clustering: Group products into 4–6 meaningful categories.
-Generative AI Summarization & Recommendations: Summarize reviews and recommend top products with Large Language Models (LLMs).
+## 🚀 Key Features
 
-#Project Steps
+* **✅ Sentiment Classification**: Categorize reviews into **Positive**, **Neutral**, or **Negative**.
+* **📦 Product Clustering**: Group products into **4–6 meaningful categories** using unsupervised learning.
+* **🧠 Generative AI Summarization**: Summarize reviews and generate **product highlights** using Large Language Models (LLMs).
+* **📇 Product Card Generation**: Create structured product summaries that can be integrated into a user interface.
 
-# Part 1: Data Preprocessing and Sentimanet Lable Clasifications
+---
 
-Objective:
-Identify and preprocess the dataset by cleaning the Amazon product reviews, then classify each review into Positive, Neutral, or Negative sentiment categories. This classification helps businesses gain insights into customer opinions and improve decision-making based on sentiment trends.
+## 🧩 Project Steps
 
-Dataset:
-Amazon Datset from https://www.kaggle.com/datasets/datafiniti/consumer-reviews-of-amazon-products/data and combained Two data sets () with the same column name to obtain a large dataset
+### 🔹 Part 1: Data Preprocessing & Sentiment Label Classification
+
+#### 🎯 Objective
+
+Clean and prepare the Amazon review data, then classify each review into **Positive**, **Neutral**, or **Negative** categories to gain valuable insights into customer sentiment.
+
+#### 📚 Dataset
+
+We used Amazon product review data from Kaggle:
+
+* `Datafiniti_Amazon_Consumer_Reviews_of_Amazon_Products.csv`
+* `Datafiniti_Amazon_Consumer_Reviews_of_Amazon_Products_May19.csv`
+
+These were merged to create a more diverse and robust dataset.
+
+#### ⚙️ Workflow Summary
+
+📍 *Notebook: `data_exploration_and_acquisition.ipynb`, `data_preprocessing.ipynb`*
+
+* Load and explore both datasets
+* Combine and clean the review data
+* Apply sentiment labeling using rule-based or lexicon-based methods (e.g., VADER)
+* Save final dataset as `cleaned_amazon_reviews_final.csv`
+
+---
+
+### 🔹 Part 2: Sentiment Classification with DistilBERT
+
+#### 🎯 Objective
+
+Use a **pretrained transformer model (DistilBERT)** to classify Amazon reviews into sentiment categories more accurately than traditional models.
+
+#### 📂 Dataset
+
+* `cleaned_amazon_reviews_final.csv` with:
+
+  * `full_review` (cleaned review text)
+  * `sentiment` (labeled sentiment)
+
+#### ⚙️ Workflow Summary
+
+📍 *Notebook: `Classification_Model_1.ipynb`*
+
+* Load and encode sentiment labels
+* Tokenize using Hugging Face’s DistilBERT tokenizer
+* Fine-tune `DistilBertForSequenceClassification` on labeled reviews
+* Evaluate model using accuracy and confusion matrix
+
+✅ **Achieved 95.29% accuracy**
+
+---
+
+### 🔹 Part 3: Product Clustering & GPT Summarization
+
+#### 🎯 Objective
+
+Organize products into clusters and generate summaries and recommendations using LLMs like GPT.
+
+#### 🛠️ Workflow Overview
+
+1. **Clustering**
+
+   * Dimensionality reduction with **UMAP**
+   * Clustering with **KMeans** (11 clusters)
+   * Assign descriptive `cluster_labels` using GPT-based interpretation
+
+2. **Product-Level Aggregation**
+
+   * Group reviews by `name` and `brand`
+   * Compute average rating, sentiment trends, and gather review samples
+
+3. **GPT-Based Summary Generation**
+
+   * Identify top and worst products per category
+   * Output structured summaries in JSON:
+
+4. **Product Card Generation**
+
+   * Final outputs rendered as **Product Cards** with:
+
+     * Product name, brand, rating
+     * Review highlights and representative image
+     * Category and source URL
+
+---
 
 
-# Part 2 :Implements a sentiment classification pipeline using DistilBERT:
-
-Data loading and preprocessing
-Label encoding for sentiment classes
-Model training with Hugging Face Transformers
-Evaluation metrics (accuracy, confusion matrix, classification report)
-Visualization of results
-Key metrics:
-
-Validation Accuracy: 95.29%
-
-# Part 3 :Generative GPT-3 Model (Generative GPT3 model.ipynb)
-
-https://colab.research.google.com/assets/colab-badge.svg
-
-Generates product category summaries using GPT-3.5-turbo:
-
-Product clustering by category
-Prompt engineering for structured JSON output
-GPT-3 API integration
-Result enrichment with product images
-JSON output generation
-Sample output structure:
 
