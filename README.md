@@ -93,13 +93,6 @@ Organize products into clusters and generate summaries and recommendations using
    * Identify top and worst products per category
    * Output structured summaries in JSON:
 
-     ```json
-     {
-       "category": "Fire Tablets",
-       "top_products": [...],
-       "worst_product": {...}
-     }
-     ```
 
 4. **Product Card Generation**
 
