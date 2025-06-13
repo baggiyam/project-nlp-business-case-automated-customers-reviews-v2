@@ -93,6 +93,14 @@ Organize products into clusters and generate summaries and recommendations using
    * Identify top and worst products per category
    * Output structured summaries in JSON:
 
+     ```json
+     {
+       "category": "Fire Tablets",
+       "top_products": [...],
+       "worst_product": {...}
+     }
+     ```
+
 4. **Product Card Generation**
 
    * Final outputs rendered as **Product Cards** with:
@@ -103,5 +111,22 @@ Organize products into clusters and generate summaries and recommendations using
 
 ---
 
+
+
+## 🛠️ Tech Stack
+
+* Python (pandas, numpy, sklearn, matplotlib, seaborn)
+* Hugging Face Transformers (`DistilBERT`)
+* UMAP, KMeans
+* OpenAI GPT-4 API (for summarization)
+* Jupyter Notebooks
+
+---
+
+## 📈 Results
+
+* ✅ **95.29% accuracy** on sentiment classification using DistilBERT
+* 🔍 Products grouped into coherent clusters such as Kindle, Fire Tablets, Accessories
+* 💬 GPT-generated summaries provide actionable insights and highlight standout products
 
 
