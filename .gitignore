@@ -5,5 +5,3 @@ results/
 models/*.joblib
 .env
 0.26.0git
-cleaned_amazon_reviews_final.csv
-cleaned_amazon_reviews_final.csv
