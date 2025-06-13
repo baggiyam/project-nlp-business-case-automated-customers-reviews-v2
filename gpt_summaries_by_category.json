@@ -21,37 +21,6 @@
   {
     "top_products": [
       {
-<<<<<<< HEAD
-        "name": "AmazonBasics USB 3.0 Cable - A-Male to B-Male - 6 Feet (1.8 Meters)",
-        "rating": 5.0,
-        "highlight": "Highly reliable cable with excellent performance and sturdy build quality",
-        "tag": "Family",
-        "imageURL": "http://ecx.images-amazon.com/images/I/41gYR5yRhGL._SS40_.jpg,https://images-na.ssl-images-amazon.com/images/I/81UaZP1cm5L._SL1500_.jpg,http://ecx.images-amazon.com/images/I/41M-LfOVpxL._SS40_.jpg,https://images-na.ssl-images-amazon.com/images/I/91L64MyjNuL._SL1500_.jpg,https://images-na.ssl-images-amazon.com/images/I/71Q7FksAbBL._SL1440_.jpg,http://ecx.images-amazon.com/images/I/51DblXv0YNL._SS40_.jpg,https://images-na.ssl-images-amazon.com/images/I/71fX9dOjj4L._SL1500_.jpg,http://ecx.images-amazon.com/images/I/311KFufveSL._SS40_PKmb-play-button-overlay-thumb_.jpg,https://images-na.ssl-images-amazon.com/images/I/51ajqjMk6hL._SL1091_.jpg"
-      },
-      {
-        "name": "Amazon Fire TV with 4K Ultra HD and Alexa Voice Remote (Pendant Design) | Streaming Media Player",
-        "rating": 5.0,
-        "highlight": "Outstanding streaming media player with 4K Ultra HD and Alexa Voice Remote for seamless entertainment experience",
-        "tag": "Generic",
-        "imageURL": "https://c1.neweggimages.com/NeweggImage/ProductImage/A1CZ_1_201801081025296976.jpg,https://images-na.ssl-images-amazon.com/images/I/41i-QOwmwoL.jpg,https://target.scene7.com/is/image/Target/53024430_Alt03,https://static.bhphoto.com/images/images500x500/amazon_b01n32ncpm_fire_tv_with_4k_1508512329000_1367210.jpg,https://target.scene7.com/is/image/Target/53024430_Alt02,https://static.bhphoto.com/images/itemImgPlaceholder.jpg,https://c1.neweggimages.com/NeweggImage/ProductImage/A6V6_13157412163460410308E1OVtvkL.jpg,https://target.scene7.com/is/image/Target/53024430_Alt01,https://c1.neweggimages.com/NeweggImage/ProductImage/A6V6_131574121922187184LEeyGCmLDL.jpg,https://c1.neweggimages.com/NeweggImage/ProductImage/A3FA_1_20180101600944727.jpg,https://www.barcodable.com/images/barcode/0841667192482.png,https://target.scene7.com/is/image/Target/53024430"
-      },
-      {
-        "name": "Fire TV Stick Streaming Media Player Pair Kit",
-        "rating": 5.0,
-        "highlight": "Convenient and cost-effective streaming solution with access to multiple apps and services",
-        "tag": "Generic",
-        "imageURL": "https://static.bhphoto.com/images/smallimages/1478208182000_1288281.jpg,https://static.bhphotovideo.com/explora/sites/default/files/cs-how-to-buy-a-streaming-device_0.jpg,https://static.bhphoto.com/images/images500x500/amazon_fire_tv_stick_streaming_1520948784000_1395909.jpg,https://static.bhphoto.com/images/images500x500/amazon_b00zv9rdkk_amazon_fire_tv_stick_1478208182000_1288281.jpg,https://c1.neweggimages.com/NeweggImage/ProductImage/1J8-0051-00003-S01.jpg,https://static.bhphoto.com/images/smallimages/1520948784000_1395909.jpg,https://c1.neweggimages.com/NeweggImage/ProductImage/1J8-0051-00003-S02.jpg"
-      }
-    ],
-    "worst_product": {
-      "name": "Oem Amazon Kindle Power Usb Adapter Wall Travel Charger Fire/dx/+micro Usb Cable",
-      "rating": 1.0,
-      "issue": "Inadequate description and misleading specifications, leading to dissatisfaction among users",
-      "tag": "Generic",
-      "imageURL": "http://ecx.images-amazon.com/images/I/41kxB7YTubL._SX38_SY50_CR%252C0%252C0%252C38%252C50_.jpg,https://i.ebayimg.com/thumbs/images/g/EX4AAOSw3GVbSwQN/s-l96.jpg,https://www.barcodable.com/images/barcode/0848719015249.png,https://i.ebayimg.com/thumbs/images/g/5egAAOSwZVlXvPuw/s-l200.jpg,https://i.ebayimg.com/thumbs/images/g/Ct8AAOSw3ydViN23/s-l200.jpg,https://i.ebayimg.com/thumbs/images/g/kTsAAOSwzJ5XYbP-/s-l96.jpg,https://i.ebayimg.com/thumbs/images/g/pz8AAOSw87JcUcll/s-l200.jpg,http://i.ebayimg.com/images/g/nhYAAOSw42JZEfDN/s-l64.jpg,https://i.ebayimg.com/thumbs/images/g/PfoAAOSwWKtUtzDZ/s-l200.jpg,https://i.ebayimg.com/thumbs/images/g/pz8AAOSw87JcUcll/s-l96.jpg,https://i.ebayimg.com/images/g/xqwAAOSwNuxXYZHY/s-l64.jpg,https://i.ebayimg.com/thumbs/images/g/64EAAOSwXeJYICuI/s-l200.jpg,https://i.ebayimg.com/images/g/1-gAAOSwM4xXYZHW/s-l64.jpg,https://i.ebayimg.com/thumbs/images/g/64EAAOSwXeJYICuI/s-l96.jpg,https://i.ebayimg.com/images/g/FtEAAOSwdGZcPp9i/s-l640.jpg,http://ecx.images-amazon.com/images/I/41GwFye-wcL._SX342_QL70_.jpg,https://i.ebayimg.com/thumbs/images/g/ZUYAAOSw~gRViOH-/s-l200.jpg,https://images-na.ssl-images-amazon.com/images/I/41GwFye-wcL.jpg,https://i.ebayimg.com/images/g/xgYAAOSwNuxXYZHU/s-l64.jpg,http://i.ebayimg.com/thumbs/images/g/0YIAAOxyItRTcTTr/s-l96.jpg,https://i.ebayimg.com/thumbs/images/g/RPgAAOSwuIRbiMzh/s-l96.jpg,https://images-na.ssl-images-amazon.com/images/I/7176kOw9a6L._SL1500_.jpg,https://i.ebayimg.com/images/g/kTsAAOSwzJ5XYbP-/s-l300.jpg,https://i.ebayimg.com/thumbs/images/g/SwkAAOSwzrxUtA34/s-l96.jpg,https://i.ebayimg.com/thumbs/images/g/PrYAAOSwVL1V-hdA/s-l96.jpg,https://i.ebayimg.com/images/g/kTsAAOSwzJ5XYbP-/s-l64.jpg"
-    },
-    "summary_text": "Only three top products are available, each offering exceptional performance and features in the Electronics category."
-=======
         "name": "AmazonBasics AAA Performance Alkaline Batteries (36 Count)",
         "rating": 4.4,
         "highlight": "Last longer than other brands, great price, highly recommended for various devices",
@@ -61,7 +30,6 @@
     ],
     "worst_product": null,
     "summary_text": "Only one top product available in the AAA Batteries category."
->>>>>>> d41e65ac86c054f57c5644716ad611df3d822485
   },
   {
     "top_products": [
