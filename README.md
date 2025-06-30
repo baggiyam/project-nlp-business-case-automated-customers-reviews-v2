@@ -8,10 +8,10 @@ This project builds a **smart product review analysis and recommendation system*
 
 ## 🚀 Key Features
 
-* **✅ Sentiment Classification**: Categorize reviews into **Positive**, **Neutral**, or **Negative**.
-* **📦 Product Clustering**: Group products into **4–6 meaningful categories** using unsupervised learning.
-* **🧠 Generative AI Summarization**: Summarize reviews and generate **product highlights** using Large Language Models (LLMs).
-* **📇 Product Card Generation**: Create structured product summaries that can be integrated into a user interface.
+- **✅ Sentiment Classification**: Categorize reviews into **Positive**, **Neutral**, or **Negative**.
+- **📦 Product Clustering**: Group products into **4–6 meaningful categories** using unsupervised learning.
+- **🧠 Generative AI Summarization**: Summarize reviews and generate **product highlights** using Large Language Models (LLMs).
+- **📇 Product Card Generation**: Create structured product summaries that can be integrated into a user interface.
 
 ---
 
@@ -27,19 +27,19 @@ Clean and prepare the Amazon review data, then classify each review into **Posit
 
 We used Amazon product review data from Kaggle:
 
-* `Datafiniti_Amazon_Consumer_Reviews_of_Amazon_Products.csv`
-* `Datafiniti_Amazon_Consumer_Reviews_of_Amazon_Products_May19.csv`
+- `Datafiniti_Amazon_Consumer_Reviews_of_Amazon_Products.csv`
+- `Datafiniti_Amazon_Consumer_Reviews_of_Amazon_Products_May19.csv`
 
 These were merged to create a more diverse and robust dataset.
 
 #### ⚙️ Workflow Summary
 
-📍 *Notebook: `data_exploration_and_acquisition.ipynb`, `data_preprocessing.ipynb`*
+📍 _Notebook: `data_exploration_and_acquisition.ipynb`, `data_preprocessing.ipynb`_
 
-* Load and explore both datasets
-* Combine and clean the review data
-* Apply sentiment labeling using rule-based or lexicon-based methods (e.g., VADER)
-* Save final dataset as `cleaned_amazon_reviews_final.csv`
+- Load and explore both datasets
+- Combine and clean the review data
+- Apply sentiment labeling using rule-based or lexicon-based methods (e.g., VADER)
+- Save final dataset as `cleaned_amazon_reviews_final.csv`
 
 ---
 
@@ -51,19 +51,19 @@ Use a **pretrained transformer model (DistilBERT)** to classify Amazon reviews i
 
 #### 📂 Dataset
 
-* `cleaned_amazon_reviews_final.csv` with:
+- `cleaned_amazon_reviews_final.csv` with:
 
-  * `full_review` (cleaned review text)
-  * `sentiment` (labeled sentiment)
+  - `full_review` (cleaned review text)
+  - `sentiment` (labeled sentiment)
 
 #### ⚙️ Workflow Summary
 
-📍 *Notebook: `Classification_Model_1.ipynb`*
+📍 _Notebook: `Classification_Model_1.ipynb`_
 
-* Load and encode sentiment labels
-* Tokenize using Hugging Face’s DistilBERT tokenizer
-* Fine-tune `DistilBertForSequenceClassification` on labeled reviews
-* Evaluate model using accuracy and confusion matrix
+- Load and encode sentiment labels
+- Tokenize using Hugging Face’s DistilBERT tokenizer
+- Fine-tune `DistilBertForSequenceClassification` on labeled reviews
+- Evaluate model using accuracy and confusion matrix
 
 ✅ **Achieved 95.29% accuracy**
 
@@ -79,48 +79,43 @@ Organize products into clusters and generate summaries and recommendations using
 
 1. **Clustering**
 
-   * Dimensionality reduction with **UMAP**
-   * Clustering with **KMeans** (11 clusters)
-   * Relabled the Clusters in 4
-   * Assign descriptive `cluster_labels` using GPT-based interpretation
+   - Dimensionality reduction with **UMAP**
+   - Clustering with **KMeans** (11 clusters)
+   - Relabled the Clusters in 4
+   - Assign descriptive `cluster_labels` using GPT-based interpretation
 
 2. **Product-Level Aggregation**
 
-   * Group reviews by `name` and `brand`
-   * Compute average rating, sentiment trends, and gather review samples
+   - Group reviews by `name` and `brand`
+   - Compute average rating, sentiment trends, and gather review samples
 
 3. **GPT-Based Summary Generation**
 
-   * Identify top and worst products per category
-   * Output structured summaries in JSON:
-
+   - Identify top and worst products per category
+   - Output structured summaries in JSON:
 
 4. **Product Card Generation**
 
-   * Final outputs rendered as **Product Cards** with:
+   - Final outputs rendered as **Product Cards** with:
 
-     * Product name, brand, rating
-     * Review highlights and representative image
-     * Category and source URL
+     - Product name, brand, rating
+     - Review highlights and representative image
+     - Category and source URL
 
 ---
 
-
-
 ## 🛠️ Tech Stack
 
-* Python (pandas, numpy, sklearn, matplotlib, seaborn)
-* Hugging Face Transformers (`DistilBERT`)
-* UMAP, KMeans
-* OpenAI GPT-4 API (for summarization)
-* Jupyter Notebooks
+- Python (pandas, numpy, sklearn, matplotlib, seaborn)
+- Hugging Face Transformers (`DistilBERT`)
+- UMAP, KMeans
+- OpenAI GPT-4 API (for summarization)
+- Jupyter Notebooks
 
 ---
 
 ## 📈 Results
 
-* ✅ **95.29% accuracy** on sentiment classification using DistilBERT
-* 🔍 Products grouped into coherent clusters such as Kindle, Fire Tablets, Accessories
-* 💬 GPT-generated summaries provide actionable insights and highlight standout products
-
-
+- ✅ **95.29% accuracy** on sentiment classification using DistilBERT.
+- 🔍 Products grouped into coherent clusters such as Kindle, Fire Tablets, Accessories.
+- 💬 GPT-generated summaries provide actionable insights and highlight standout products.
